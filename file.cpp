@@ -2,19 +2,19 @@
 #include<stdlib.h>
 #include<string.h>
 #include<GL\glut.h>
-#define SORT_NO 4	// Number of sorting algorithms
-#define MAX 50		// Number of values in the array
-#define SPEED 700	// Speed of sorting, must be greater than MAX always
-int a[MAX];			// Array
-int swapflag=0;		// Flag to check if swapping has occured
-int i=0,j=0;		// To iterate through the array
-int flag=0;			// For Insertion Sort
-int dirflag=0;		// For Ripple Sort, to change direction at the ends
-int count=1;		// For Ripple Sort, to keep count of how many are sorted at the end		
-int k=0;			// To Switch from Welcome screen to Main Screen
-int sorting=0;		// 1 if Sorted
+#define SORT_NO 4	
+#define MAX 50		
+#define SPEED 700	
+int a[MAX];		
+int swapflag=0;		
+int i=0,j=0;		
+int flag=0;			
+int dirflag=0;	
+int count=1;				
+int k=0;			
+int sorting=0;
 char *sort_string[]={"Bubble Sort","Selection Sort","Insertion Sort","Ripple Sort"};
-int sort_count=0;	// To cycle through the string
+int sort_count=0;	
 
 // Function to display text on screen char by char
 void bitmap_output(int x, int y, char *string, void *font)
